@@ -27,6 +27,8 @@ class TDD_TicTacToeTests: XCTestCase {
     }
     func testInitValue_nineCells() {
         let ticModel = TicModel()
+        
+        XCTAssertEqual(ticModel.grid.count, 9)
     }
 
     func testPerformanceExample() throws {
