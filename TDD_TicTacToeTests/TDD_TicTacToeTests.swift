@@ -35,15 +35,9 @@ class TDD_TicTacToeTests: XCTestCase {
     func test_setCell3toX() {
         var ticModel = TicModel()
         ticModel.setCell(n: 3, c: .x)
-        
-        XCTAssertTrue(ticModel.grid[3] == Cell.x)
-    }
-    
-    func test_ignoreSetCellto42() {
-        var ticModel = TicModel()
-        
         ticModel.setCell(n: 42, c: .x)
         
+        XCTAssertTrue(ticModel.grid[3] == Cell.x)
         XCTAssertTrue(ticModel.grid.contains { $0 == Cell.b } )
     }
 
