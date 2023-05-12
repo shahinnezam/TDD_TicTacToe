@@ -15,6 +15,7 @@
 		3F88F8402A0EC246000BFD88 /* TDD_TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F83F2A0EC246000BFD88 /* TDD_TicTacToeUITests.swift */; };
 		3F88F8422A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8412A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift */; };
 		3F88F8502A0EC36B000BFD88 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F84E2A0EC368000BFD88 /* Model.swift */; };
+		3F88F8522A0EF4AB000BFD88 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		3F88F83F2A0EC246000BFD88 /* TDD_TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_TicTacToeUITests.swift; sourceTree = "<group>"; };
 		3F88F8412A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F88F84E2A0EC368000BFD88 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				3F88F8242A0EC243000BFD88 /* TDD_TicTacToeApp.swift */,
 				3F88F84E2A0EC368000BFD88 /* Model.swift */,
 				3F88F8262A0EC243000BFD88 /* ContentView.swift */,
+				3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */,
 				3F88F8282A0EC245000BFD88 /* Assets.xcassets */,
 				3F88F82A2A0EC245000BFD88 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				3F88F8502A0EC36B000BFD88 /* Model.swift in Sources */,
 				3F88F8272A0EC243000BFD88 /* ContentView.swift in Sources */,
+				3F88F8522A0EF4AB000BFD88 /* ViewModel.swift in Sources */,
 				3F88F8252A0EC243000BFD88 /* TDD_TicTacToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
