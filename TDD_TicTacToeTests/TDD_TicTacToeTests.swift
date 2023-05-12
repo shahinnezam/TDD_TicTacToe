@@ -30,7 +30,12 @@ class TDD_TicTacToeTests: XCTestCase {
         
         XCTAssertEqual(ticModel.grid.count, 9)
     }
-
+    
+    func testInitValue_blankCells() {
+        let ticModel = TicModel()
+        
+        XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 9)
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
