@@ -32,6 +32,14 @@ class TDD_TicTacToeTests: XCTestCase {
         XCTAssertEqual((ticViewModel.grid.filter { $0 == Cell.b }.count), 9)
     }
     
+    func test_setCell3toX() {
+        var ticModel = TicModel()
+        ticModel.setCell(n: 3, c: .x)
+        
+        XCTAssertTrue(ticModel.grid[3] == Cell.x)
+    }
+
+
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
