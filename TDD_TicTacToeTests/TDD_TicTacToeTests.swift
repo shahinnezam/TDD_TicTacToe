@@ -25,15 +25,10 @@ class TDD_TicTacToeTests: XCTestCase {
         XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 9)
     }
     
-    func testviewModel_initValue() {
+    func testviewModel_initValueAndBlankCells() {
         let ticViewModel = TicViewModel()
         
         XCTAssertEqual(ticViewModel.grid.count, 9)
-    }
-    
-    func testviewModel_blankCells() {
-        let ticViewModel = TicViewModel()
-        
         XCTAssertEqual((ticViewModel.grid.filter { $0 == Cell.b }.count), 9)
     }
     
