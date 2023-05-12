@@ -25,17 +25,13 @@ class TDD_TicTacToeTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-    func testInitValue_nineCells() {
+    func testInitValue_blankAndcellCount() {
         let ticModel = TicModel()
         
         XCTAssertEqual(ticModel.grid.count, 9)
-    }
-    
-    func testInitValue_blankCells() {
-        let ticModel = TicModel()
-        
         XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 9)
     }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
