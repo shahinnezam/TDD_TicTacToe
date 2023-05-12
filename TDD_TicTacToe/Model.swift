@@ -27,6 +27,10 @@ struct TicModel {
         get { _grid }
     }
     
+    var isGridFull: Bool {
+        get { grid.filter {$0 == Cell.b}.count == 0}
+    }
+    
     mutating func setCell(n:Int, c: Cell) {
         guard _grid.indices.contains(n) else {
             return
@@ -36,6 +40,8 @@ struct TicModel {
         }
         _grid[n] = c
     }
+    
+    
 
 
 
