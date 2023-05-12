@@ -31,6 +31,16 @@ class TDD_TicTacToeTests: XCTestCase {
         XCTAssertEqual(ticModel.grid.count, 9)
         XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 9)
     }
+    func viewModel_initValue() {
+        let ticViewModel = TicViewModel()
+        
+        XCTAssertEqual(ticViewModel.grid.count, 9)
+    }
+    func viewModel_blankCells() {
+        let ticViewModel = TicViewModel()
+        
+        XCTAssertEqual((ticViewModel.grid.filter { $0 == Cell.b }.count), 9)
+    }
     
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
