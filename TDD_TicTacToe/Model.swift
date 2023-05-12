@@ -26,6 +26,12 @@ struct TicModel {
     var grid: [Cell] {
         get { _grid }
     }
+    
+    mutating func setCell(n:Int, c: Cell) {
+        _grid[n] = c
+    }
+
+
 
 }
 
