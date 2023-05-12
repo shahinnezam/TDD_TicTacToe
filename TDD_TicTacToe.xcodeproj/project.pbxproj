@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F88F8252A0EC243000BFD88 /* TDD_TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8242A0EC243000BFD88 /* TDD_TicTacToeApp.swift */; };
-		3F88F8272A0EC243000BFD88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8262A0EC243000BFD88 /* ContentView.swift */; };
 		3F88F8292A0EC245000BFD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F8282A0EC245000BFD88 /* Assets.xcassets */; };
 		3F88F82C2A0EC245000BFD88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F82B2A0EC245000BFD88 /* Preview Assets.xcassets */; };
 		3F88F8362A0EC246000BFD88 /* TDD_TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8352A0EC246000BFD88 /* TDD_TicTacToeTests.swift */; };
@@ -16,6 +15,7 @@
 		3F88F8422A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8412A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift */; };
 		3F88F8502A0EC36B000BFD88 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F84E2A0EC368000BFD88 /* Model.swift */; };
 		3F88F8522A0EF4AB000BFD88 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */; };
+		3F88F8562A0EFCD4000BFD88 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F8552A0EFCD4000BFD88 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		3F88F8212A0EC243000BFD88 /* TDD_TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD_TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F8242A0EC243000BFD88 /* TDD_TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_TicTacToeApp.swift; sourceTree = "<group>"; };
-		3F88F8262A0EC243000BFD88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F88F8282A0EC245000BFD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F88F82B2A0EC245000BFD88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F88F8312A0EC246000BFD88 /* TDD_TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		3F88F8412A0EC246000BFD88 /* TDD_TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F88F84E2A0EC368000BFD88 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3F88F8552A0EFCD4000BFD88 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				3F88F8242A0EC243000BFD88 /* TDD_TicTacToeApp.swift */,
+				3F88F8552A0EFCD4000BFD88 /* View.swift */,
 				3F88F84E2A0EC368000BFD88 /* Model.swift */,
-				3F88F8262A0EC243000BFD88 /* ContentView.swift */,
 				3F88F8512A0EF4AB000BFD88 /* ViewModel.swift */,
 				3F88F8282A0EC245000BFD88 /* Assets.xcassets */,
 				3F88F82A2A0EC245000BFD88 /* Preview Content */,
@@ -263,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F88F8562A0EFCD4000BFD88 /* View.swift in Sources */,
 				3F88F8502A0EC36B000BFD88 /* Model.swift in Sources */,
-				3F88F8272A0EC243000BFD88 /* ContentView.swift in Sources */,
 				3F88F8522A0EF4AB000BFD88 /* ViewModel.swift in Sources */,
 				3F88F8252A0EC243000BFD88 /* TDD_TicTacToeApp.swift in Sources */,
 			);
