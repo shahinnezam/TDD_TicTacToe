@@ -40,6 +40,17 @@ class TDD_TicTacToeTests: XCTestCase {
         XCTAssertTrue(ticModel.grid[3] == Cell.x)
         XCTAssertTrue(ticModel.grid.contains { $0 == Cell.b } )
     }
+    
+    func test_setCellTwiceIgnoreSecond() {
+        var ticModel = TicModel()
+        
+        ticModel.setCell(n: 3, c: .x)
+        ticModel.setCell(n: 3, c: .o)
+        
+        XCTAssertTrue(ticModel.grid[3] == Cell.x)
+        XCTAssertEqual((ticModel.grid.filter { $0 == Cell.x }.count), 1)
+        XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 8)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
