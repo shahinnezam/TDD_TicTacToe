@@ -17,13 +17,6 @@ class TDD_TicTacToeTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testInitValue_blankAndcellCount() {
-        let ticModel = TicModel()
-        
-        XCTAssertEqual(ticModel.grid.count, 9)
-        XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 9)
-    }
     
     func testviewModel_initValueAndBlankCells() {
         let ticViewModel = TicViewModel()
@@ -63,6 +56,11 @@ class TDD_TicTacToeTests: XCTestCase {
         XCTAssertEqual((ticModel.grid.filter { $0 == Cell.b }.count), 8)
     }
 
+    func test_isGridFullnewGameFalse() {
+        let ticModel = TicModel()
+        
+        XCTAssertFalse(ticModel.isGridFull)
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
